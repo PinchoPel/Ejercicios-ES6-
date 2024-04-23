@@ -8,7 +8,7 @@ for (let index = 0; index < array.length; index++) {
    if (param === array[index]) {
     return array.indexOf(param)
    } 
-}// primero se recorre el parámetro array que representa a mainCharacters con el for, luego si es estrictamente igual, devuelve la posición con el método indexOf de cada string del array
+}
 }
 
 

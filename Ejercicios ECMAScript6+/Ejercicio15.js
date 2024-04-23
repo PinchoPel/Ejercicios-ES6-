@@ -20,4 +20,3 @@ swap(fantasticFour,0,3)
 
 console.log(fantasticFour)
 
-//En este ejemplo, la función intercambiarElementos() toma tres argumentos: el array en el que se realizará el intercambio, y los índices de los elementos que se intercambiarán. Luego, dentro de la función, se realiza el intercambio de los elementos usando una variable temporal para almacenar temporalmente el valor de uno de los elementos mientras se realiza el intercambio.

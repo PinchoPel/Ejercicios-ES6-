@@ -43,4 +43,3 @@ console.log(removeItem(mainCharacters ,"Luke"));
 console.log((removeItem(mainCharacters ,"Rey")));
 console.log((removeItem(mainCharacters ,"Obi-Wan")));
 console.log((removeItem(mainCharacters ,"Chewbacca")));
-// los va eliminando según el orden del console.log

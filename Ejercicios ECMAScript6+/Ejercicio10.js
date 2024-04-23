@@ -38,13 +38,11 @@ const users = [
 
 
 const average = "";
-for (const user of users) {//aquí coge cada usuario
-  let suma = 0; // las variables deben colocarse fuera de for in para que vayan sumando en cada vuelta, si las colocamos dentro del for in se reinicia su valor en cada vuelta del for in y siempre valdrán cero
+for (const user of users) {
   let quantitySound = 0;
-    for (const favoritesSound in user.favoritesSounds) {  // aquí accedemos al objeto
-      suma += +user.favoritesSounds[favoritesSound].volume; //sacamos el volumen por usuario
-      quantitySound++;
-     } // con el + delante de un string numérico lo transformamos en un number sin usar parseInt parseFloat pero no se pueden usar propiedades como .length
+    for (const favoritesSound in user.favoritesSounds) {  
+      suma += +user.favoritesSounds[favoritesSound].volume;
+     } 
      console.log(user.name + ":" + suma/quantitySound);
       }
 

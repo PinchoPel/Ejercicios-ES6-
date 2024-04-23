@@ -46,7 +46,7 @@ const users = [
   },
 ];
 
-//usar users.map y combinar for of y for in lleva al mismo sitio
+
 let soundsArray = [];
 for (const user of users) {
   for (const favoritesSound in user.favoritesSounds) {

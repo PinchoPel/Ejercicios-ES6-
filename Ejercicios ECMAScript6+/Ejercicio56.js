@@ -10,21 +10,14 @@ const streamers = [
 	{name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
 ];
 
-const inputFilter = document.querySelector("input"); /*El atributo data-function="toFilterStreamers" es un ejemplo de un atributo de datos personalizado en HTML. Los atributos de datos personalizados permiten a los desarrolladores almacenar información personalizada dentro de los elementos HTML, sin afectar su representación visual ni su comportamiento por defecto. Estos atributos comienzan con el prefijo "data-" seguido de un nombre significativo.*/
+const inputFilter = document.querySelector("input"); 
 
 
-/*inputFilter.addEventListener("input", function(){
-    const searchStreamer = inputFilter.value.toLowerCase();
-
-    const filteredStreamer = streamers.filter(strName =>{ 
-        return strName.name.includes(searchStreamer);});
-    console.log(filteredStreamer);
-})*/
 
 inputFilter.addEventListener("input", function(){
     const searchStreamer = inputFilter.value.toLowerCase(); 
-   const nameFiltered = streamers.filter(streamer => { // con streamer.name entramos en el nombre de cada streamer ya que filter tiene el for incorporado
-    return streamer.name.toLowerCase().includes(searchStreamer); //tolowercase es necesario para que todo lo pase a minúsculas y no aparezca un array vacío en la consola. Esto se lee como "devuelve el nombre del streamer en minúscula que incluya la búsqueda del input"
+   const nameFiltered = streamers.filter(streamer => { 
+    return streamer.name.toLowerCase().includes(searchStreamer); 
     });
     console.log(nameFiltered);
 });
